@@ -1,17 +1,22 @@
 {
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/react": "^16.4.16",
-    "framer": "^0.10 || ^1"
-  },
-  "peerDependencies": {
-    "framer": "^1.0",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0"
-  },
-  "version": "1.0.0",
-  "dependencies": {
-    "styled-components": "^4.2.0"
-  }
+	"license": "MIT",
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@types/react": "^16.4.16"
+	},
+	"peerDependencies": {
+		"framer": "^1.0 || ^0.10",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"version": "1.0.0",
+	"dependencies": {
+		"styled-components": "^4.2.0"
+	},
+	"name": "@framer/dannyw7.test-design-system",
+	"author": "Danny Waite",
+	"framer": {
+		"displayName": "Test Design System",
+		"id": "5d02ccfd-3daf-4d16-b15c-f08cf9651128"
+	}
 }

@@ -1,21 +1,21 @@
-import * as React from "react"
-import { theme } from "../theme"
-import styled from "styled-components"
+import * as React from "react";
+import { theme } from "../theme";
+import styled from "styled-components";
 
 // Types
 export type Props = {
   /** Optional string that can be used to set the button value */
-  text?: string
+  text?: string;
 
   /** Make button grow to 100% */
-  fluid?: boolean
+  fluid?: boolean;
 
   /** Disable button */
-  disabled?: boolean
+  disabled?: boolean;
 
   /** Button kind */
-  kind?: "default" | "primary" | "danger"
-}
+  kind?: "default" | "primary" | "danger";
+};
 
 // Component
 export const Button: React.FC<Props> = ({
@@ -23,7 +23,7 @@ export const Button: React.FC<Props> = ({
   fluid,
   disabled,
   children,
-  kind
+  kind,
 }) => (
   <StyledButton
     className={`${fluid ? "fluid" : ""} ${disabled ? "disabled" : ""} ${
@@ -32,7 +32,7 @@ export const Button: React.FC<Props> = ({
   >
     {text || children}
   </StyledButton>
-)
+);
 
 // Styles
 const StyledButton = styled.button`
@@ -48,7 +48,7 @@ const StyledButton = styled.button`
   line-height: 1.1;
   margin: 0;
   padding: ${theme.space[3]};
-  text-align: center;
+  text-align: right;
   &:hover {
     color: ${theme.color.bodyLight};
     transition: box-shadow 0.2s, color 0.2s, background-color 0.2s;
@@ -103,4 +103,4 @@ const StyledButton = styled.button`
     box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2),
       inset 0px 0px 0px 1px hsla(0, 0%, 0%, 0.05);
   }
-`
+`;
